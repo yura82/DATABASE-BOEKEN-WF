@@ -82,5 +82,14 @@ namespace DATABASE_BOEKEN_WF
 
             AddBook.Show();
         }
+        NewAutGenUIt newAutGenUIt = new NewAutGenUIt();
+
+        private void btNewAUt_Click(object sender, EventArgs e)
+        {
+            newAutGenUIt.Show();
+
+        }
+
+        
     }
 }

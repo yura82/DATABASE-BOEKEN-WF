@@ -31,6 +31,7 @@
             this.lbBoeken = new System.Windows.Forms.ListBox();
             this.lbMyBook = new System.Windows.Forms.Label();
             this.btAddBoek = new System.Windows.Forms.Button();
+            this.btNewAUt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbBoeken
@@ -62,9 +63,20 @@
             this.btAddBoek.UseVisualStyleBackColor = true;
             this.btAddBoek.Click += new System.EventHandler(this.btAddBoek_Click);
             // 
+            // btNewAUt
+            // 
+            this.btNewAUt.Location = new System.Drawing.Point(380, 164);
+            this.btNewAUt.Name = "btNewAUt";
+            this.btNewAUt.Size = new System.Drawing.Size(143, 23);
+            this.btNewAUt.TabIndex = 3;
+            this.btNewAUt.Text = "ADD Auteur";
+            this.btNewAUt.UseVisualStyleBackColor = true;
+            this.btNewAUt.Click += new System.EventHandler(this.btNewAUt_Click);
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(595, 345);
+            this.Controls.Add(this.btNewAUt);
             this.Controls.Add(this.btAddBoek);
             this.Controls.Add(this.lbMyBook);
             this.Controls.Add(this.lbBoeken);
@@ -82,6 +94,7 @@
         private System.Windows.Forms.ListBox lbBoeken;
         private System.Windows.Forms.Label lbMyBook;
         private System.Windows.Forms.Button btAddBoek;
+        private System.Windows.Forms.Button btNewAUt;
     }
 }
 

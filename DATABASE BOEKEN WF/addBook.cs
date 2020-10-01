@@ -37,7 +37,7 @@ namespace DATABASE_BOEKEN_WF
             }
 
         }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
             using (DataBase_BoekenEntities cxt = new DataBase_BoekenEntities())
@@ -48,8 +48,12 @@ namespace DATABASE_BOEKEN_WF
                     AantalPaginas = Convert.ToInt32(numPages.Value),
                     Score = Convert.ToInt32(numScores.Value),
                     Publicatie = datePublish.Value,
-                    UitgeverId = Convert.ToInt32(cbUitgeverij.ValueMember)
+                    UitgeverId = Convert.ToInt32(cbUitgeverij.SelectedValue)
+                   
                 }) ;
+                MessageBox.Show("You have a new book in data base " + txtTittel.Text );
+                cxt.SaveChanges();
+                    
             }
         }
     }

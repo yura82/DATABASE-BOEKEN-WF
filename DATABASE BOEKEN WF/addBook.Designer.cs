@@ -28,10 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtVoornaam = new System.Windows.Forms.TextBox();
-            this.txtAchternaam = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.cbAuteur = new System.Windows.Forms.ComboBox();
             this.cbGanre = new System.Windows.Forms.ComboBox();
@@ -40,7 +36,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtTittel = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btNewBoek = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.numScores = new System.Windows.Forms.NumericUpDown();
@@ -50,38 +46,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numScores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPages)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtVoornaam
-            // 
-            this.txtVoornaam.Location = new System.Drawing.Point(157, 31);
-            this.txtVoornaam.Name = "txtVoornaam";
-            this.txtVoornaam.Size = new System.Drawing.Size(203, 22);
-            this.txtVoornaam.TabIndex = 0;
-            // 
-            // txtAchternaam
-            // 
-            this.txtAchternaam.Location = new System.Drawing.Point(157, 71);
-            this.txtAchternaam.Name = "txtAchternaam";
-            this.txtAchternaam.Size = new System.Drawing.Size(203, 22);
-            this.txtAchternaam.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(50, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 17);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Voornaam";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(50, 74);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 17);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Achternaam";
             // 
             // label3
             // 
@@ -136,7 +100,7 @@
             // 
             // txtTittel
             // 
-            this.txtTittel.Location = new System.Drawing.Point(542, 34);
+            this.txtTittel.Location = new System.Drawing.Point(122, 60);
             this.txtTittel.Name = "txtTittel";
             this.txtTittel.Size = new System.Drawing.Size(205, 22);
             this.txtTittel.TabIndex = 10;
@@ -144,21 +108,21 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(450, 34);
+            this.label6.Location = new System.Drawing.Point(50, 60);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(39, 17);
             this.label6.TabIndex = 11;
             this.label6.Text = "Tittel";
             // 
-            // button1
+            // btNewBoek
             // 
-            this.button1.Location = new System.Drawing.Point(532, 165);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(180, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "ADD to Data";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btNewBoek.Location = new System.Drawing.Point(532, 165);
+            this.btNewBoek.Name = "btNewBoek";
+            this.btNewBoek.Size = new System.Drawing.Size(180, 23);
+            this.btNewBoek.TabIndex = 12;
+            this.btNewBoek.Text = "ADD New Boek";
+            this.btNewBoek.UseVisualStyleBackColor = true;
+            this.btNewBoek.Click += new System.EventHandler(this.button1_Click);
             // 
             // label7
             // 
@@ -219,7 +183,7 @@
             this.Controls.Add(this.numScores);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btNewBoek);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtTittel);
             this.Controls.Add(this.label5);
@@ -228,10 +192,6 @@
             this.Controls.Add(this.cbGanre);
             this.Controls.Add(this.cbAuteur);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtAchternaam);
-            this.Controls.Add(this.txtVoornaam);
             this.Name = "addBook";
             this.Text = "addBook";
             this.Load += new System.EventHandler(this.addBook_Load);
@@ -243,11 +203,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtVoornaam;
-        private System.Windows.Forms.TextBox txtAchternaam;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbAuteur;
         private System.Windows.Forms.ComboBox cbGanre;
@@ -256,7 +211,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtTittel;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btNewBoek;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.NumericUpDown numScores;
